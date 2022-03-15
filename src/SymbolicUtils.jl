@@ -11,6 +11,7 @@ using TermInterface: node_count
 using Metatheory
 using Metatheory.Rules
 using Metatheory.Rewriters
+using Unityper
 
 # Sym, Term,
 # Add, Mul and Pow
@@ -54,10 +55,18 @@ include("ordering.jl")
 include("simplify_rules.jl")
 
 # API = simplify + substitute
-export simplify, substitute
-include("api.jl")
+export simplify
+include("simplify.jl")
+
+export substitute
+include("substitute.jl")
+
+# EGraph rewriting
+include("egraph.jl")
+export optimize
 
 include("code.jl")
+
 
 # ADjoints
 include("adjoints.jl")
