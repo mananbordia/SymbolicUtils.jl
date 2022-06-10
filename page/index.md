@@ -166,7 +166,7 @@ The rules with which the canonical form of `Symbolic{<:Number}` terms are constr
  -  product of `Mul`'s are fused
  -  `c * (c₁x₁ + ... + cₙxₙ)` will be converted into `c*c₁*x₁ + ... + c*cₙ*xₙ`
  -  `(x₁^c₁ * ... * xₙ^cₙ)^c` will be converted into `x₁^(c*c₁) * ... * xₙ^(c*cₙ)`
- -  there are come other simplifications on construction that you can check [here](https://github.com/JuliaSymbolics/SymbolicUtils.jl/blob/master/src/methods.jl)
+ -  there are some other simplifications on construction that you can check [here](https://github.com/JuliaSymbolics/SymbolicUtils.jl/blob/master/src/methods.jl)
 
 
 Here is an example of this
